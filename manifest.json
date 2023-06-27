@@ -6,5 +6,12 @@
   "id": "commander",
   "name": "Commander",
   "main": "build/main.js",
-  "ui": "build/ui.js"
+  "ui": "build/ui.js",
+  "parameters": [
+    {
+      "key": "instruction",
+      "name": "Instruction",
+      "allowFreeform": true
+    }
+  ]
 }

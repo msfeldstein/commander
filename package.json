@@ -2,6 +2,7 @@
   "dependencies": {
     "@create-figma-plugin/ui": "^2.3.0",
     "@create-figma-plugin/utilities": "^2.3.0",
+    "openai": "^3.2.1",
     "preact": ">=10"
   },
   "devDependencies": {
@@ -15,6 +16,13 @@
     "watch": "build-figma-plugin --typecheck --watch"
   },
   "figma-plugin": {
+    "parameters": [
+      {
+        "name": "Instruction",
+        "key": "instruction",
+        "allowFreeform": true
+      }
+    ],
     "editorType": [
       "figma"
     ],
